@@ -98,7 +98,7 @@
         "NLP",
         "Graph Machine Learning"
       ]
-    }
+    },
     {
       "name": "Data Analysis",
       "level": "Advanced",
@@ -196,7 +196,7 @@
       "startDate": "01.09.2021",
       "endDate": "31.08.2023",
       "url": "https://example.com"
-    }
+    },
     {
       "name": "Android application: GymRat",
       "summary": "Free and opensource android application written in kotlin to track exercises at the gym, as well as the bodyweight, calories and protein",
@@ -204,7 +204,7 @@
       "startDate": "01.09.2023",
       "endDate": "31.12.2023",
       "url": "https://example.com"
-    }
+    },
     {
       "name": "Android application: MyMeds",
       "summary": "Free and opensource android application written in kotlin compose to track available medications at home, expiry date and category",
@@ -212,7 +212,7 @@
       "startDate": "05.08.2024",
       "endDate": "08.08.2024",
       "url": "https://example.com"
-    }
+    },
     {
       "name": "ApiZoom – deep learning to quantify the Varroa parasite in honey bee hive images",
       "summary": "Bachelor project: detect and count number of toxic varroa mites in honey bee hive images, among other available debris. These mites are a leading cause of death in the bee community and hives require treatment when reaching a certain varroa threshold.",
