@@ -4,7 +4,7 @@ title: EPFL Racing Team
 description: Driverless Perception
 img: assets/img/lrt.jpg
 importance: 1
-category: work
+category: Self-driving Car
 related_publications: true
 ---
 
