@@ -1,36 +1,44 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Joe Najm",
+    "label": "Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "joe.najm@hotmail.com",
+    "phone": "+41 078 346 50 01",
+    "url": "https://joenajm.github.io/",
+    "summary": "Just an engineer passionnate about Machine Learning, Computer Vision and Data Science",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "postalCode": "8620",
+      "city": "Wetzikon",
+      "countryCode": "CH",
+      "region": "Zurich"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "JoeNajm",
+        "url": "https://www.linkedin.com/in/joenajm/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Alfa Romeo/Stake Sauber Formula One Team",
+      "position": "Data Analysis Intern",
+      "url": "https://www.sauber-group.com/",
+      "startDate": "01.09.2023",
+      "endDate": "Ongoing",
+      "summary": "Automatic extraction of trajectory information from on-board F1 footage using Deep networks and Visual SLAM",
+      "highlights": ["Data Analysis", "Machine Learning", "SLAM", "Statistics"]
+    },
+    {
+      "name": "Medical Image Analysis Lab (CHUV, Lausanne)",
+      "position": "Student Research Assistant",
+      "url": "https://wp.unil.ch/mial/",
+      "startDate": "01.07.2022",
+      "endDate": "31.05.2023",
+      "summary": "Trained and deployed deep models for the detection of lesions in brain MRI images. Developed a software to make the network easily accessible to clinicians using docker (available in projects section)",
+      "highlights": ["Data Analysis", "Machine Learning", "3D images", "Software development", "Docker"]
     }
   ],
   "volunteer": [
@@ -151,13 +159,28 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "French",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "Arabic",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
       "language": "English",
       "fluency": "Fluent",
+      "icon": ""
+    },    
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate",
+      "icon": ""
+    },
+    {
+      "language": "German",
+      "fluency": "Beginner",
       "icon": ""
     }
   ],
