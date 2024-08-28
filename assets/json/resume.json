@@ -83,7 +83,7 @@
       "releaseDate": "23.05.2023",
       "url": "https://zenodo.org/records/7962482",
       "summary": "Software to deploy the RimNet deep network to clinicians, where they would only need to click on a potential lesion to extract a patch and run the network in realtime on it using docker, and receive instantaneously a feedback"
-    },
+    }
   ],
   "skills": [
     {
@@ -104,7 +104,7 @@
       "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Deep Learning",
+        "Deep Learning"
       ]
     },
     {
