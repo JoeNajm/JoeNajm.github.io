@@ -19,9 +19,9 @@ During my second year in the team, I was promoted to the role of perception grou
         {% include figure.liquid loading="eager" path="assets/img/lrt_dv_squad.jpeg" title="dv squad" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        <video class="tutorial_vid" width="220" height="140" autoplay="autoplay" loop> 
-          <source src="../assets/img/vaudoise.mp4" type="video/mp4" /> 
-       </video>
+        <div class="col-sm mt-3 mt-md-0">
+            {% include video.liquid path="assets/video/vsv_dv.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+        </div>
     </div>
 </div>
 <div class="caption">
@@ -37,12 +37,12 @@ The LiDAR pipeline: the LiDAR pipeline was based on clustering the LiDAR  pointc
 The fusion pipeline: the fusion pipeline was based on the monocular and LiDAR pipelines. The monocular pipeline would detect the cones on the image using YOLOv7, meanwhile the ground was removed from the LiDAR pointcloud. Knowing the intrinsics of the camera and extrinsics between the LiDAR and camera, the points of the remaining pointcloud would be projected on the image, and using the bounding boxes of the YOLOv7, the points that were inside the bounding boxes would be extracted. The distance was then estimated using the median of the points.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/vision_sensors.png" title="dv squad" class="img-fluid rounded z-depth-1" %}
     <div class="col-sm mt-2 mt-md-0">
-        <video class="tutorial_vid" width="220" height="140" autoplay="autoplay" loop muted> 
-            <source src="C:\Users\jnj\Documents\experimentations\JoeNajm.github.io\assets\img\vsv_dv.mp4" type="video/mp4" /> 
-        </video>
+        <div class="col-sm mt-3 mt-md-0">
+            {% include video.liquid path="assets/video/vsv_dv.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+        </div>
     </div>
 </div>
 <div class="caption">
