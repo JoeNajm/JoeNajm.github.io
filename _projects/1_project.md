@@ -19,9 +19,7 @@ During my second year in the team, I was promoted to the role of perception grou
         {% include figure.liquid loading="eager" path="assets/img/lrt_dv_squad.jpeg" title="dv squad" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        <div class="col-sm mt-3 mt-md-0">
-            {% include video.liquid path="assets/video/vsv_dv.mp4" class="img-fluid rounded z-depth-1" controls=true %}
-        </div>
+        {% include video.liquid path="assets/video/vsv_dv.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 <div class="caption">
@@ -40,9 +38,7 @@ The fusion pipeline: the fusion pipeline was based on the monocular and LiDAR pi
     <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/vision_sensors.png" title="dv squad" class="img-fluid rounded z-depth-1" %}
     <div class="col-sm mt-2 mt-md-0">
-        <div class="col-sm mt-3 mt-md-0">
-            {% include video.liquid path="assets/video/vsv_dv.mp4" class="img-fluid rounded z-depth-1" controls=true %}
-        </div>
+        {% include video.liquid path="assets/video/vsv_dv.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 <div class="caption">
