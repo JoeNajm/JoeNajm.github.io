@@ -1,81 +1,26 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: ApiZoom – deep learning to quantify the Varroa parasite in honey bee hive images
+description: Deep learning to quantify the Varroa parasite in honey bee hive images
+img: assets/img/yolov5_varroa.png
 importance: 2
-category: work
+category: Machine Learning
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+ApiZoom is a project I worked on for my Bachelor thesis at EPFL (with Prof. Jean-Philippe Thiran and his lab LTS5). The goal of the project was to train a deep learning model to automatically detect varroa mites on honey bees in images. ApiZoom aim to develop a tool to help beekeepers monitor the health of their hives.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Varroa mites are a major threat to honey bees, as they feed on the bees' hemolymph, weakening the bees and transmitting diseases. The mites are visible to the naked eye, but their detection is time-consuming and requires expertise. The current way of checking the health of a hive is to place a board on the bottom and count manually count how many mites are there. This task is not only extremely time consuming, but very difficult as the board is quite big and the mites are small.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/varroa.jpg" title="varroa" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/board.jpg" title="board hive" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The goal of ApiZoom was to develop a tool that could automatically detect the mites in images, making the process faster and more accessible to beekeepers. YOLOv5 was chosen as it was the state-of-the-art at the time, easy to finetune, highly performant and most importantly fast (in order for the beeker to receive a feedback quickly). The model was then integrated into a web application, where the user could upload an image and receive the number of mites detected (https://www.apizoom.app/).
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+It was my first experience with deep learning, and I learned a lot about the process of training a model. This experience paved the way for my future projects in the field of computer vision and deep learning, as well as initiating a strong attraction to Machine Learning.
