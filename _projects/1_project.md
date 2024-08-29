@@ -19,11 +19,8 @@ During my second year in the team, I was promoted to the role of perception grou
         {% include figure.liquid loading="eager" path="assets/img/lrt_dv_squad.jpeg" title="dv squad" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <video class="img-fluid rounded z-depth-1" controls>
-            <source src="{{ 'assets/img/vaudoise.mp4' | relative_url }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-</div>
+        {% include figure.liquid loading="eager" path="assets/img/vaudoise.mp4" title="vaudoise" class="video" %}
+    </div>
 </div>
 <div class="caption">
     On the left is the amazing driverless team, while on the right is the car driving autonomously!
@@ -42,10 +39,8 @@ The fusion pipeline: the fusion pipeline was based on the monocular and LiDAR pi
         {% include figure.liquid loading="eager" path="assets/img/vision_sensors.JPG" title="dv squad" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        <video class="img-fluid rounded z-depth-1" controls>
-            <source src="{{ 'assets/img/vsv_dv.mp4' | relative_url }}" type="video/mp4">
-        </video>
-</div>
+        {% include figure.liquid loading="eager" path="assets/img/vsv_dv.mp4" title="vsv" class="video" %}
+    </div>
 </div>
 <div class="caption">
     On the left is an overview of the pipelines, and on the right the pipelines in action!
