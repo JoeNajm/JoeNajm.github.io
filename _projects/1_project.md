@@ -43,7 +43,7 @@ The fusion pipeline: the fusion pipeline was based on the monocular and LiDAR pi
     </div>
 </div>
 <div class="caption">
-    On the left is an overview of the pipelines, and on the right the pipelines in action!
+    On the top is an overview of the pipelines, and on the bottom the pipelines in action!
 </div>
 
 My team and I encountered major problem all throughout the development process, but managed to find solutions. Indeed, it was the first time anyone of us had to use ROS 2, we had to find a way to synchronize the sensors (otherwise the fusion would not work), make important performance compromises in order to respect the realtime constraints (some of the famous libraries were too slow), find extremely accurate intrinsics and extrinsics, correct the ego-motion of the LiDAR ...
