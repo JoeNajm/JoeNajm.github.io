@@ -36,7 +36,7 @@ The fusion pipeline: the fusion pipeline was based on the monocular and LiDAR pi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/vision_sensors.JPG" title="dv squad" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/vision_sensors.png" title="dv squad" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/vsv_dv.mp4" title="vsv" class="video" %}
