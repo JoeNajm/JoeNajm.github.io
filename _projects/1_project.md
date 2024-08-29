@@ -19,11 +19,14 @@ During my second year in the team, I was promoted to the role of perception grou
         {% include figure.liquid loading="eager" path="assets/img/lrt_dv_squad.jpeg" title="dv squad" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/vaudoise.mp4" title="vaudoise" class="img-fluid rounded z-depth-1" %}
-    </div>
+        <video class="img-fluid rounded z-depth-1" controls>
+            <source src="{{ 'assets/img/vaudoise.mp4' | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+</div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    On the left is the amazing driverless team, while on the right is the car driving autonomously!
 </div>
 
 My team and I developed three pipelines for the perception system: a monocular pipeline, a LiDAR pipeline, and a fusion pipeline. Depending on the event, only one pipeline would run, however, in case of sensor failure, the working pipeline would automatically switch, in order to continue the event (ie, if the fusion pipeline was running and the LiDAR failed, the monocular pipeline would take over). 
@@ -33,6 +36,20 @@ The monocular pipeline: the monocular pipeline was based on a YOLOv7 object dete
 The LiDAR pipeline: the LiDAR pipeline was based on clustering the LiDAR  pointcloud to extract the cones. First, a ground removal was done (Ransac is the track was flat, otherwise another more adapted ground-bin based algorithm), then objects that were too far, near, big, high, low ... were removed, in order to have only the cones remaining on the pointcloud. The cones were then extracted using a DBSCAN algorithm, and the distance was estimated using the median of each cone.
 
 The fusion pipeline: the fusion pipeline was based on the monocular and LiDAR pipelines. The monocular pipeline would detect the cones on the image using YOLOv7, meanwhile the ground was removed from the LiDAR pointcloud. Knowing the intrinsics of the camera and extrinsics between the LiDAR and camera, the points of the remaining pointcloud would be projected on the image, and using the bounding boxes of the YOLOv7, the points that were inside the bounding boxes would be extracted. The distance was then estimated using the median of the points.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/vision_sensors.JPG" title="dv squad" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <video class="img-fluid rounded z-depth-1" controls>
+            <source src="{{ 'assets/img/vsv_dv.mp4' | relative_url }}" type="video/mp4">
+        </video>
+</div>
+</div>
+<div class="caption">
+    On the left is an overview of the pipelines, and on the right the pipelines in action!
+</div>
 
 My team and I encountered major problem all throughout the development process, but managed to find solutions. Indeed, it was the first time anyone of us had to use ROS 2, we had to find a way to synchronize the sensors (otherwise the fusion would not work), make important performance compromises in order to respect the realtime constraints (some of the famous libraries were too slow), find extremely accurate intrinsics and extrinsics, correct the ego-motion of the LiDAR ...  
 
