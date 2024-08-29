@@ -184,6 +184,14 @@
       "url": "https://joenajm.github.io/projects/epflrt/"
     },
     {
+      "name": "Streamline RimNet: Tools for Automatic Classification of Paramagnetic Rim Lesions in MRI of Multiple Sclerosis",
+      "summary": "Tool to deploy a deep network called RimNet",
+      "highlights": ["Deep Learning", "Docker", "Medical Imaging", "MRI images"],
+      "startDate": "01.09.2021",
+      "endDate": "31.08.2023",
+      "url": "https://joenajm.github.io/projects/epflrt/"
+    },
+    {
       "name": "Android application: GymRat",
       "summary": "Free and opensource android application written in kotlin to track exercises at the gym, as well as the bodyweight, calories and protein",
       "highlights": ["Kotlin", "Fitness"],
