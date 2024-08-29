@@ -20,7 +20,7 @@ During my second year in the team, I was promoted to the role of perception grou
     </div>
     <div class="col-sm mt-2 mt-md-0">
         <video class="tutorial_vid" width="220" height="140" autoplay="autoplay" loop> 
-          <source src="assets/img/vaudoise.mp4" type="video/mp4" /> 
+          <source src="../assets/img/vaudoise.mp4" type="video/mp4" /> 
        </video>
     </div>
 </div>
