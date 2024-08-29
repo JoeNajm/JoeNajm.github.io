@@ -13,10 +13,10 @@ The user can create a new session, depending on the workout of the day, and add 
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/sessions_GymRat.jpg" title="sessions GymRat" class="img-fluid rounded z-depth-1" style="width: 400px; height: 300px;" %}
+        {% include figure.liquid loading="eager" path="assets/img/sessions_GymRat.jpg" title="sessions GymRat" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nutrition_GymRat.jpg" title="nutrition GymRat" class="img-fluid rounded z-depth-1" style="width: 400px; height: 300px;" %}
+        {% include figure.liquid loading="eager" path="assets/img/nutrition_GymRat.jpg" title="nutrition GymRat" class="img-fluid rounded z-depth-1" style="max-width: 50%;" %}
     </div>
 </div>
 <div class="caption">
