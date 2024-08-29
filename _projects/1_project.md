@@ -5,7 +5,6 @@ description: Driverless Perception
 img: assets/img/lrt.jpg
 importance: 1
 category: Self-driving Car
-related_publications: true
 ---
 
 The EPFL Racing Team is a student association at the École Polytechnique Fédérale de Lausanne (EPFL) that designs an electric and autonomous racing car every year, and competes in the Formula Student competition. The team is composed of students from various fields of study, such as mechanical engineering, electrical engineering, computer science, and management. The team is divided into several subteams, each responsible for a specific part of the car, such as the chassis, the powertrain, the suspension, the aerodynamics, the driverless system, and the business plan.
@@ -19,7 +18,7 @@ During my second year in the team, I was promoted to the role of perception grou
         {% include figure.liquid loading="eager" path="assets/img/lrt_dv_squad.jpeg" title="dv squad" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-2 mt-md-0">
-        {% include video.liquid path="assets/video/vsv_dv.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+        {% include video.liquid path="assets/video/vaudoise.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 <div class="caption">
