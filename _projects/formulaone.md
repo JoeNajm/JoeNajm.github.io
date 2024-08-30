@@ -14,11 +14,6 @@ The goal of the project was to extract new trajectory data (mainly yaw rate but 
 The project was divided into two parts: first extracting only the yaw rate from the footage using Visual Odometry methods (extracting the velocity in that case was not possible due to the scaling problem of monocular only cameras), and then using deep networks to predict the yaw rate and velocity from the footage.
 
 Visual Odometry is the tracking of the camera's movement in 3D space from a sequence of images. Two main categories arise: Direct methods, which estimate the motion directly from the pixel intensities, and Indirect methods, which estimate the motion from the features extracted from the images. The two mothods were tested. Both methods require 2D-3D projections, with the formula below, where s is the scale factor, f is the focal length, u and v are the pixel coordinates, c is the principal point and Xc, Yc, Zc are the coordinates of the camera in the world frame.
-<div class="row">
-    <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/scaling_factor.png" title="scaling" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
 
 $$
 s \cdot \begin{bmatrix}
@@ -39,12 +34,10 @@ Z\\
 \end{bmatrix}
 $$
 
-Direct methods use directly the raw pixel intensities to estimate the pose, hence by taking a small window of previous frames, it would theoretically be possible to reproduce the current frame, for each of the previous ones, by knowing the intrinsics, extrinsics and 3D coordinates. For a point p, with R being the rotation matrix, t the translation vector, Pi a projection function and d the depth of the point, the projection is given by the formula below, where p' is the projection of p in the image plane.
-<div class="row">
-    <div class="col-sm mt-2 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/dso.png" title="dso" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+Direct methods use directly the raw pixel intensities to estimate the pose, hence by taking a small window of previous frames, it would theoretically be possible to reproduce the current frame, for each of the previous ones, by knowing the intrinsics, extrinsics and 3D coordinates. For a point p, with R being the rotation matrix, t the translation vector, $\Pi_c$ a projection function and d the depth of the point, the projection is given by the formula below, where p' is the projection of p in the image plane.
+
+$$ p' = \Pi_c (R \Pi_c^{-1}(p, d_p)+t) $$
+
 Therefore, the pose is a parameter of the projected frame and thus by minimizing the photometric error between each couple of frames, the pose can be estimated and optimized. The main advantage of direct methods is that they are more robust to textureless surfaces, as they use the raw pixel intensities. However, they are more computationally expensive and sensitive to lighting changes.
 
 On the other hand, Indirect methods use features extracted from the images to estimate the pose. The features are usually corners, edges or blobs, and are tracked from frame to frame. Depth of features is estimated and added to a 3D map. Features are then extracted on the next frames and matched to the ones of the map and projected to the image (using intrinsics and extrinsic parameters). The 2D error is then minimized (Bundle adjustment) to optimize the pose.
@@ -62,14 +55,14 @@ The second part of the project was to use deep networks to predict the yaw rate 
 
 
 <div class="row">
-    <div class="col-sm mt-2 mt-md-0">
+    <div class="col-sm-6 mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/sfm.png" title="sfm" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 The velocity predicted network was a bit less performant than the yaw rate network, as the scaling problem of monocular cameras was not solved. In order to have a full dataset, laps with competitors were included (to have DRS), which made the training harder.
 <div class="row">
-    <div class="col-sm mt-2 mt-md-0">
+    <div class="col-sm-6 mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/inhouse.png" title="inhouse" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
