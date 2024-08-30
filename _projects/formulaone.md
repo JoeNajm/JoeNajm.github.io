@@ -14,7 +14,13 @@ The goal of the project was to extract new trajectory data (mainly yaw rate but 
 The project was divided into two parts: first extracting only the yaw rate from the footage using Visual Odometry methods (extracting the velocity in that case was not possible due to the scaling problem of monocular only cameras), and then using deep networks to predict the yaw rate and velocity from the footage.
 
 Visual Odometry is the tracking of the camera's movement in 3D space from a sequence of images. Two main categories arise: Direct methods, which estimate the motion directly from the pixel intensities, and Indirect methods, which estimate the motion from the features extracted from the images. The two mothods were tested. Both methods require 2D-3D projections, with the formula below, where s is the scale factor, f is the focal length, u and v are the pixel coordinates, c is the principal point and Xc, Yc, Zc are the coordinates of the camera in the world frame.
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/scaling_factor.png" title="scaling" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
+$$
 s \cdot \begin{bmatrix}
 u\\
 v\\
@@ -31,7 +37,7 @@ Y\\
 Z\\
 1
 \end{bmatrix}
-
+$$
 
 Direct methods use directly the raw pixel intensities to estimate the pose, hence by taking a small window of previous frames, it would theoretically be possible to reproduce the current frame, for each of the previous ones, by knowing the intrinsics, extrinsics and 3D coordinates. For a point p, with R being the rotation matrix, t the translation vector, Pi a projection function and d the depth of the point, the projection is given by the formula below, where p' is the projection of p in the image plane.
 <div class="row">
@@ -52,7 +58,24 @@ Both algorithms were run on the same lap, with the telemetry data of the car ava
     </div>
 </div>
 
+The second part of the project was to use deep networks to predict the yaw rate and velocity from the footage. The network would be trained in a supervised manner using the available telemetry data of one of our drivers, and tested on our other driver to evaluate the generalization capacities of the network. Several self-supervised opensource network were finetuned (with a new supervised loss), as well as a custom in-house network. The network performed quite well, especially when trained and tested on the same event. They also managed to adapt well to different events, night races and cases where competitors cars were present in the FoV. But once again, for confidentiality reasons, results were not uploaded (feel free to reach out though!).
 
+
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/sfm.png" title="sfm" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+The velocity predicted network was a bit less performant than the yaw rate network, as the scaling problem of monocular cameras was not solved. In order to have a full dataset, laps with competitors were included (to have DRS), which made the training harder.
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/inhouse.png" title="inhouse" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Overall, both families performed quite well. The Visual Odometry did not need any finetuning/training on a particular event to perform well, and has a well known mathematical theory. It however required accurate lens distortion parameters, struggled a lot from the scaling problem (making the velocity extraction impossible), and had small issues generalizing to night races/races with competitors.
+Deep networks on the other hand performed quite well when finetuned properly, had less noisy results (no need for post-processing) and could be generalized fpr velocity estimation. However, performed slightly worse when applied on a new event, required a complete training dataset and act as a black box.
 
 
 
