@@ -55,14 +55,14 @@ The second part of the project was to use deep networks to predict the yaw rate 
 
 
 <div class="row">
-    <div class="col-sm-6 mt-2 mt-md-0">
+    <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/sfm.png" title="sfm" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 The velocity predicted network was a bit less performant than the yaw rate network, as the scaling problem of monocular cameras was not solved. In order to have a full dataset, laps with competitors were included (to have DRS), which made the training harder.
 <div class="row">
-    <div class="col-sm-6 mt-2 mt-md-0">
+    <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/inhouse.png" title="inhouse" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
