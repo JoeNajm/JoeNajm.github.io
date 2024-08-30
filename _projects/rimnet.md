@@ -9,6 +9,8 @@ category: Software Development
 
 Streamline RimNet was developed when I was still working as a student research assistant at the Medical Image Analysis Lab (MIAL) of the CHUV, with Dr. Meritxell Bach Cuadra.
 
+This work resulted in an abstract that was presented at the 2023 ECTRIMS conference in Milan, Italy. The abstract can be found online here <a href="https://journals.sagepub.com/doi/epub/10.1177/13524585231196192#sec-31-20">https://journals.sagepub.com/doi/epub/10.1177/13524585231196192</a>.
+
 RimNet is a deep network that predicts PRL Multiple Sclerosis lesions (also known as "rims"), from brain MRI Images. A patch of size 28x28x28 is fed in two modalities (Flair and Phase, meaning that we give the same patch, but "viewed differently" by the MRI machine), and the network predicts if the patch is or not a PRL MS lesion.
 
 However, using the network requires a minimum of knowledge in deep learning and python, as the user needs to extract a patch from the full 3D MRI image and feed it to the network. This was a problem as most clinicians do not have coding experience, nor time to learn python. Furthermore, giving a diagnosis to the patient is a time consuming task, as several doctors need to manually search for lesions, and then compare their results.

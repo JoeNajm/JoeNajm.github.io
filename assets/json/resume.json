@@ -81,8 +81,8 @@
       "name": "Streamline RimNet: Tools for Automatic Classification of Paramagnetic Rim Lesions in MRI of Multiple Sclerosis",
       "publisher": "MIAL, CHUV",
       "releaseDate": "23.05.2023",
-      "url": "https://zenodo.org/records/7962482",
-      "summary": "Software to deploy the RimNet deep network to clinicians, where they would only need to click on a potential lesion to extract a patch and run the network in realtime on it using docker, and receive instantaneously a feedback"
+      "url": "https://journals.sagepub.com/doi/epub/10.1177/13524585231196192#sec-31-20",
+      "summary": "Abstract to promote the software. It deploys the RimNet deep network to clinicians, where they would only need to click on a potential lesion to extract a patch, run the network in realtime using docker, and receive instantaneously a feedback"
     }
   ],
   "skills": [
@@ -185,7 +185,7 @@
     },
     {
       "name": "Streamline RimNet: Tools for Automatic Classification of Paramagnetic Rim Lesions in MRI of Multiple Sclerosis",
-      "summary": "Tool to deploy a deep network called RimNet",
+      "summary": "Tool to deploy a deep network called RimNet. Resulted in an abstract publication at ECTRIMS 2023",
       "highlights": ["Deep Learning", "Docker", "Medical Imaging", "MRI images"],
       "startDate": "01.09.2021",
       "endDate": "31.08.2023",
@@ -202,7 +202,7 @@
     {
       "name": "Android application: MyMeds",
       "summary": "Free and opensource android application written in kotlin compose to track available medications at home, expiry date and category",
-      "highlights": ["Kotlin0", "Kotlin Compose", "Health"],
+      "highlights": ["Kotlin", "Kotlin Compose", "Health"],
       "startDate": "05.08.2024",
       "endDate": "08.08.2024",
       "url": "https://joenajm.github.io/projects/mymeds/"
