@@ -16,7 +16,7 @@ The user can also add medications to the "pharmacy", if it is a common medicatio
 The app once again doesn't require an internet connection, and the data is stored locally on the phone. The app is available on my github page, and soon to the play store!
 
 <div class="row">
-    <div class="col-sm-6 mt-2 mt-md-0">
+    <div class="col-sm-2 mt-2 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/mymeds.jpg" title="mymeds" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
