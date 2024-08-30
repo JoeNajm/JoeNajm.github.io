@@ -3,7 +3,7 @@ layout: page
 title: ApiZoom – deep learning to quantify the Varroa parasite in honey bee hive images
 description: Deep learning to quantify the Varroa parasite in honey bee hive images
 img: assets/img/yolov5_varroa.png
-importance: 1
+importance: 2
 category: Machine Learning
 ---
 
