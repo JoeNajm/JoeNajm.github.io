@@ -49,7 +49,7 @@
       "startDate": "01.09.2021",
       "endDate": "31.08.2023",
       "summary": "Automatic detection and distance estimation of objects in realtime with a LiDAR and monocular camera, using machine learning methods",
-      "highlights": ["Computer Vision", "Machine Learning", "LiDAR", "Camera", "Real-time"]
+      "highlights": ["Computer Vision", "Machine Learning", "LiDAR", "Monocular Camera", "Real-time", "Sensor fusion", "DBScan", "Nvidia Jetson", "TensorRT", "Ransac"]
     }
   ],
   "education": [
