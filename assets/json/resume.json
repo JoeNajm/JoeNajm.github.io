@@ -29,7 +29,7 @@
       "startDate": "01.09.2023",
       "endDate": "Ongoing",
       "summary": "Automatic extraction of trajectory information from on-board F1 footage using Deep networks and Visual SLAM",
-      "highlights": ["Data Analysis", "Machine Learning", "SLAM", "Statistics"]
+      "highlights": ["Data Analysis", "Machine Learning", "SLAM", "Statistics", "Visual Odometry", "State Estimation", "Pose Estimation"]
     },
     {
       "name": "Medical Image Analysis Lab (CHUV, Lausanne)",
