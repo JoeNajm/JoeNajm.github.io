@@ -13,7 +13,7 @@ The app allows the user to add their medications their expiry date, quantity and
 
 The user can also add medications to the "pharmacy", if it is a common medication, then it would be easier to add it to the list when buying a new one. 
 
-The app once again doesn't require an internet connection, and the data is stored locally on the phone. The app is available on my github page, and soon to the play store!
+The app once again doesn't require an internet connection, and the data is stored locally on the phone. The app is available on my <a href="https://github.com/JoeNajm/MyMeds">github page</a>, and soon to the play store!
 
 <div class="row">
     <div class="col-sm-3 mt-2 mt-md-0">
