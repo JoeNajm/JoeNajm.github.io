@@ -2,7 +2,7 @@
 layout: page
 title: MyMeds
 description: android application to help patients manage their medication
-img: assets/img/mymeds.png
+img: assets/img/mymeds_logo.png
 importance: 3
 category: Software Development
 ---
