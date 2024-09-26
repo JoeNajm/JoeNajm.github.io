@@ -185,23 +185,28 @@
     },
     {
       "name": "EPFL Racing Team Driverless perception",
-      "summary": "Detection and distance estimation of objects in realtime for a self-driving car, with a monocular camera and a LiDAR, using artificial intelligence",
-      "highlights": ["Computer Vision", "YOLOv7", "LiDAR", "Clustering", "Realtime"],
+      "summary": "Supervised and led a team to develop the vision/perception pipeline for a self-driving racing car with important constraints: the code should be robust to potential sensor failures, accurate and run in real-time on an embedded computer (Nvidia Jetson Orin)",
+      "highlights": ["Developed a real-time object detection and distance estimation algorithms, using a monocular camera and a LiDAR.",
+        "Performed object and keypoints detection, as well as PnP for distance estimation using just a monocular camera",
+        "Performed Ground removal using Ransac, DBscan clustering, ego-motion correction on the LiDAR pointcloud",
+        "Performed sensor calibration (obtain intrinsic and extrinic parameters) and sensor fusion using computer vision projections (3D-2D) to obtain better results",
+        "Integrated robust and realtime algorithms to the main pipeline with ROS2",
+        "Deployed, tested and debugged the algorithms for realtime use on a Nvidia Jetson"],
       "startDate": "01.09.2021",
       "endDate": "31.08.2023",
       "url": "https://joenajm.github.io/projects/epflrt/"
     },
     {
       "name": "Streamline RimNet: Tools for Automatic Classification of Paramagnetic Rim Lesions in MRI of Multiple Sclerosis",
-      "summary": "Tool to deploy a deep network called RimNet. Resulted in an abstract publication at ECTRIMS 2023",
-      "highlights": ["Deep Learning", "Docker", "Medical Imaging", "MRI images"],
+      "summary": "Improve the current network for the classification of brain lesions, and find a good and easy way to automatically deploy it to clinicians without prior coding knowledge required. Resulted in an abstract publication at ECTRIMS 2023",
+      "highlights": ["Trained deep networks for the detection and classification of Multiple-Sclerosis lesions in brain MRI images with Pytorch", "Performed data pre-processing and normalization using biomedical imaging frameworks such as Monai", "Developed a software tool to deploy the model to clinicians using docker. Software extracts a patch around a click, feeds it to the network and provide live feedback to the user", "Published an abstract at the ECTRIMS 2023 conference, regarding the robustness of the deep model with respect to the center patch selection"],
       "startDate": "01.09.2021",
       "endDate": "31.08.2023",
       "url": "https://joenajm.github.io/projects/rimnet/"
     },
     {
       "name": "Android application: GymRat",
-      "summary": "Free and opensource android application written in kotlin to track exercises at the gym, as well as the bodyweight, calories and protein",
+      "summary": "Free, opensource and fully local android application written in kotlin to track exercises at the gym, as well as the bodyweight, calories and protein",
       "highlights": ["Kotlin", "Fitness"],
       "startDate": "01.09.2023",
       "endDate": "31.12.2023",
@@ -209,7 +214,7 @@
     },
     {
       "name": "Android application: MyMeds",
-      "summary": "Free and opensource android application written in kotlin compose to track available medications at home, expiry date and category",
+      "summary": "Free, opensource and fully local android application written in kotlin compose to track available medications at home, expiry date and category",
       "highlights": ["Kotlin", "Kotlin Compose", "Health"],
       "startDate": "05.08.2024",
       "endDate": "08.08.2024",
@@ -217,8 +222,8 @@
     },
     {
       "name": "ApiZoom – deep learning to quantify the Varroa parasite in honey bee hive images",
-      "summary": "Bachelor project: detect and count number of toxic varroa mites in honey bee hive images, among other available debris. These mites are a leading cause of death in the bee community and hives require treatment when reaching a certain varroa threshold.",
-      "highlights": ["Computer Vision", "YOLOv5", "Bees"],
+      "summary": "Bachelor thesis with Prof. Jean-Philippe Thiran. Main task: automatically detect toxic bee-killer parasites on bee-hive images.",
+      "highlights": ["Computer Vision", "Metric analysis: Precision, Recall, F1, mAP, AUC ...", "Successfully trained a YOLOv5 network for the automatic detection of the toxic varroa mites"],
       "startDate": "15.02.2021",
       "endDate": "30.06.2021",
       "url": "https://joenajm.github.io/projects/apizoom/"
