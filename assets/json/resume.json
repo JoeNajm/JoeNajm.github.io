@@ -6,7 +6,7 @@
     "email": "joe.najm@hotmail.com",
     "phone": "+41 078 346 50 01",
     "url": "https://joenajm.github.io/",
-    "summary": "Just an engineer passionnate about Machine Learning, Computer Vision and Data Science",
+    "summary": "EPFL Master's graduate with a strong passion and interest for computer vision, machine learning and data science, with previous experience in biomedical research and Formula One! [Eligible to work in Switzerland].",
     "location": {
       "postalCode": "8620",
       "city": "Wetzikon",
@@ -29,7 +29,7 @@
       "startDate": "01.09.2023",
       "endDate": "Ongoing",
       "summary": "Automatic extraction of trajectory information from on-board F1 footage using Deep networks and Visual SLAM",
-      "highlights": ["Data Analysis", "Machine Learning", "SLAM", "Statistics", "Visual Odometry", "State Estimation", "Pose Estimation"]
+      "highlights": ["Data Analysis", "Machine Learning", "SLAM", "Statistics", "Visual Odometry", "State Estimation", "Pose Estimation", "Jira", "GIT", "Scrum Master"]
     },
     {
       "name": "Medical Image Analysis Lab (CHUV, Lausanne)",
@@ -37,8 +37,8 @@
       "url": "https://wp.unil.ch/mial/",
       "startDate": "01.07.2022",
       "endDate": "31.05.2023",
-      "summary": "Trained and deployed deep models for the detection of lesions in brain MRI images. Developed a software to make the network easily accessible to clinicians using docker (available in projects section)",
-      "highlights": ["Data Analysis", "Machine Learning", "3D images", "Software development", "Docker"]
+      "summary": "Trained and deployed deep models for the detection and classification of lesions in brain MRI images. Developed a software to make the network easily accessible to clinicians with no prior coding experience, using docker (available in projects section)",
+      "highlights": ["Data Analysis", "Machine Learning", "3D images", "Software development", "Docker", "Medical Imaging", "Statistical Analysis"]
     }
   ],
   "volunteer": [
@@ -48,8 +48,8 @@
       "url": "https://epflracingteam.ch/en/",
       "startDate": "01.09.2021",
       "endDate": "31.08.2023",
-      "summary": "Automatic detection and distance estimation of objects in realtime with a LiDAR and monocular camera, using machine learning methods",
-      "highlights": ["Computer Vision", "Machine Learning", "LiDAR", "Monocular Camera", "Real-time", "Sensor fusion", "DBScan", "Nvidia Jetson", "TensorRT", "Ransac"]
+      "summary": "Supervised and led a team to develop the vision/perception pipeline for a self-driving racing car with important constraints: the code should be robust to potential sensor failures, accurate and run in real-time on an embedded computer (Nvidia Jetson Orin).",
+      "highlights": ["Computer Vision", "Machine Learning", "LiDAR", "Monocular Camera", "Real-time", "Sensor fusion", "Sensor Calibration","DBScan", "Nvidia Jetson", "TensorRT", "Ransac", "PnP", "Testing and Debugging", "Team Management"]
     }
   ],
   "education": [
@@ -104,7 +104,13 @@
       "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Deep Learning"
+        "Deep Learning",
+        "Data Visualization",
+        "Pandas",
+        "Numpy",
+        "Plotly",
+        "Webapps development",
+        "Statistics"
       ]
     },
     {
@@ -115,7 +121,9 @@
         "Deep Learning",
         "Pattern Recognition",
         "OpenCV",
-        "Visual SLAM"
+        "Visual SLAM",
+        "Pose estimation",
+        "PnP"
       ]
     },
     {
@@ -169,10 +177,10 @@
   "projects": [
     {
       "name": "Automatic Extraction of Yaw Rate and Velocity from on-board Formula One footage",
-      "summary": "Automatically extract trajectory information such as veloicty and yaw rate from the on-board footage, using Visual SLAM and Deep Networks",
-      "highlights": ["Deep Learning", "Visual SLAM", "Data Analysis"],
+      "summary": "Extract trajectory information (Yaw Rate and velocity) from monocular on-board Formula One footage.",
+      "highlights": ["Visual SLAM / Visual Odometry for State and Pose estimation in C++", "Trained / Deployed deep networks using Python and Pytorch.", "Webapps development using Gradio for data visualization", "Statistical analysis on the results to evaluate the robustness of the experimented methods"],
       "startDate": "01.09.2023",
-      "endDate": "Ongoing",
+      "endDate": "27.09.2024",
       "url": "https://joenajm.github.io/projects/formulaone/"
     },
     {
