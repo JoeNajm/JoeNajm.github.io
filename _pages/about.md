@@ -14,5 +14,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Electrical engineer from EPFL passionate about machine learning, data science, computer vision and image processing. I have experience in Formula One, 
-as well as in the biomedical industry. Feel free to have a look at my CV and previous projects!
+Professional LapTime Minimizer and Car Performance squeezer. With an electrical engineering master's from EPFL and a passion for software development, machine learning, data science, computer vision and image processing. I am currently a Formula One engineer with previous experience in the biomedical industry. Feel free to have a look at my CV and previous projects!

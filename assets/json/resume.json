@@ -6,7 +6,7 @@
     "email": "joe.najm@hotmail.com",
     "phone": "+41 078 346 50 01",
     "url": "https://joenajm.github.io/",
-    "summary": "EPFL Master's graduate with a strong passion and interest for computer vision, machine learning and data science, with previous experience in biomedical research and Formula One! [Eligible to work in Switzerland].",
+    "summary": "EPFL Master's graduate and Formula One engineer with a strong passion and interest for computer vision, machine learning, software development, and data science, with experience in biomedical research and motorsport! [Eligible to work in Switzerland].",
     "location": {
       "postalCode": "8620",
       "city": "Wetzikon",
@@ -24,10 +24,19 @@
   "work": [
     {
       "name": "Audi Formula One project (Sauber Motorsport AG)",
+      "position": "Performance Development Engineer",
+      "url": "https://www.sauber-group.com/",
+      "startDate": "01.12.2024",
+      "endDate": "Ongoing",
+      "summary": "Webapp software developer. F1 Performance Engineer for Nico Hülkenberg specialised in live driving lines for Practice, Qualifying, and Race. Data acquisition of telemetry for competitors during live sessions",
+      "highlights": ["Software Development", "Typescript", "Svelte", "Machine Learning", "Driving Lines", "Data acquisition", "Data management"]
+    },
+    {
+      "name": "Audi Formula One project (Sauber Motorsport AG)",
       "position": "Data Analysis Intern",
       "url": "https://www.sauber-group.com/",
       "startDate": "01.09.2023",
-      "endDate": "Ongoing",
+      "endDate": "30.09.2024",
       "summary": "Automatic extraction of trajectory information from on-board F1 footage using Deep networks and Visual SLAM",
       "highlights": ["Data Analysis", "Machine Learning", "SLAM", "Statistics", "Visual Odometry", "State Estimation", "Pose Estimation", "Jira", "GIT", "Scrum Master"]
     },
